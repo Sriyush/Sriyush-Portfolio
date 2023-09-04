@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Srivastava</title>
+    <link rel="shortcut icon" href="asset/kai.png" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="navbar">
+            <div class="navbar-left">
+                <div class="navbar-item"><a class="link" id="name" onclick="scrollToSection('home')">Ayush Srivastava</a></div>
+            </div>
+            <div class="navbar-right">
+                <div class="navbar-item"><a class="link" onclick="scrollToSection('home')">home</a></div>
+                <div class="navbar-item"><a class="link" onclick="scrollToSection('about')">about</a></div>
+                <div class="navbar-item"><a class="link" onclick="scrollToSection('project')">project</a></div>
+                <div class="navbar-item"><a class="link" onclick="scrollToSection('contact')">contact</a></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1 class="heading-primary">hey, I'm Ayush Srivastava</h1>
+            <div class="home-info">
+                <p class="text-primary">
+                    With great skills comes great job oppourtunities
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="about" id="about">
+        <div class="main-container">
+            <h2 class="heading__">
+                <span class="heading-sec__main">
+                    About Me
+                    <hr>
+                </span>
+                <span class="heading-sec__sub">
+                    Just like Spidey scales skyscrapers, I navigate the web of coding with finesse.
+                </span>
+            </h2>
+        </div>
+
+        <div class="about-elements">
+            <div class="about-me">
+                <img class="tile-image" id="vegeta" src="assets/spidypeek.gif" alt="">
+                <h2 class="card-title"><menu>Intro</menu></h2>
+                <p class="card-text">
+                    Hey, this is your friendly neighborhood Ayush Srivastava, swinging through the academic web at VIT, Chennai! With the determination of your favorite web-slinger, I'm here to conquer the world of software engineering. Challenges? They're just part of the adventure as I web-swing past every coding obstacle, rising to become the mighty Software Engineer! Spidey-sense tingling, right? 😉
+                </p>
+            </div>
+
+            <div class="about-me">
+                <img class="tile-image" id="goku" src="assets/spiderverse.gif" alt="">
+                <h2 class="card-title">Spider-Sense tingling... What do I know?</h2>
+                <p class="card-text">
+                    <p class="card-text">
+                        Just like I'm a pro at tackling supervillains, I'm equally skilled in the art of Problem Solving and Data Structures & Algorithms (DSA). With the intelligence of a superhero, I conquer the realms of C++, HTML, CSS, and JS, just like Spidey swings through the city skyscrapers. Harnessing the power of Git, I navigate the ever-changing code battlefield, much like Spider-Man taking on his rogues' gallery of villains. Even the complexities of Linux are child's play to me. And when it comes to taming data, I'm a master, just like Spidey with his web-shooters!
+But that's not all, folks! In addition to my DSA prowess, I've been swinging through the world of Flutter and Dart for quite some time, crafting user-friendly apps that would make even Tony Stark jealous. With all these skills in my toolkit, nothing can stand in my way as I soar higher, ascending to new heights in the digital universe, just like your friendly neighborhood Spider-Man! 🚀🕸️💻
+                    </p>
+                </p>
+            </div>
+    </section>
+
+    <section class="project" id="project">
+        <div class="main-container">
+            <h2 class="heading__">
+                <span class="heading-sec__main">
+                    project(s)
+                    <hr>
+                </span>
+                <span class="heading-sec__sub">
+                    The future belongs to those who believe in the beauty of their dreams
+                </span>
+            </h2>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="main-container" id="min_margin">
+            <h2 class="heading__">
+                <span class="heading-sec__main">
+                    Spider-Links
+                    <span class="heading-sec__sub">
+                        Nice to meet ya! Swing by my other webzones!
+                    </span>
+                    <hr>
+                </span>
+
+                <div class="social-icons">
+                    <a href="https://github.com/sriyush">
+                        <i class="fab fa-github">github</i>
+                    </a>
+                    <a href="https://leetcode.com/sriyush">
+                        <i class="fas fa-terminal">leetcode</i>
+                    </a>
+                    <a href="mailto:srivastavasatyam2003@gmail.com">
+                        <i class="fas fa-envelope">email</i>
+                    </a>
+                    <a href="https://www.instagram.com/sriyush_">
+                        <i class="fab fa-instagram">insta</i>
+                    </a>
+                </div> 
+            </h2>
+        </div>   
+        
+        <footer class="footer">
+            <p class="footer-text">Made with 🕸️ by Sriyush</p>
+        </footer>
+    </section>
+    
+</body>
+</html>
