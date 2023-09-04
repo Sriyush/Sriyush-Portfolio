@@ -18,9 +18,9 @@ body {
 
 .header {
     position: fixed;
-    max-width: 100%;
+    width: 100%;
     z-index: 1000;
-    background:linear-gradient(to right,rgba(205, 141, 141, 0.8),rgba(130, 142, 205, 0.8)),url('assets/spidyweb.webp');
+    background:linear-gradient(to right,rgba(205, 141, 141, 0.8),rgba(130, 142, 205, 0.8)),url("assets/spidyweb.webp");
     /* color: #ff0000; */
     /* box-shadow: 0 10px 100px rgba(0,0,0,.1); */
     line-height: 1.5;
