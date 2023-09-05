@@ -318,7 +318,7 @@ i {
 }
 
 /* Media query for responsiveness (adjust as needed) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1080px) {
     .navbar {
         flex-direction: column;
         align-items: center;
