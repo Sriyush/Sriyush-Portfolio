@@ -62,6 +62,7 @@ a:hover {
 
 .home {
     /* color: #ffff; */
+    display: flex;
     background: linear-gradient(to right,rgba(205, 141, 141, 0.8),rgba(130, 142, 205, 0.8)),url(assets/spiderman.jpg);
     background-position: center;
     background-size: cover;
@@ -345,12 +346,49 @@ i {
     }
 
     .project-item {
-        flex-direction: column-reverse;
+        /* flex-direction: column; */
+        text-align: center;
     }
 
     .project-image img {
         width: 100%;
         height: auto;
+    }
+    .navbar {
+        padding: 1rem 2rem; /* Reduce padding for the navigation bar */
+    }
+
+    .navbar-item {
+        padding: 0.5rem 1rem; /* Reduce padding for navigation items */
+    }
+
+    .home-content {
+        padding-top: 20%; /* Adjust the positioning of home content */
+    }
+
+    .heading-primary {
+        font-size: 2rem; /* Reduce font size for the main heading */
+    }
+
+    .project {
+        height: auto; /* Adjust project section height for smaller screens */
+    }
+
+    .project-details h3 {
+        font-size: 20px; /* Reduce font size for project titles */
+    }
+
+    .project-details p {
+        font-size: 14px; /* Reduce font size for project descriptions */
+    }
+
+    .footer-text {
+        font-size: 0.8rem; /* Reduce font size for footer text */
+    }
+    .project-details,
+    .project-image {
+        order: 0; /* Swap the order of project details and project image */
+        width: 100%; /* Adjust width to fill the container */
     }
 }
 
