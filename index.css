@@ -7,9 +7,9 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    position: relative;
+    position:relative;
     line-height: 1.5;
-    overflow-x: hidden;
+    overflow-x:hidden;
     overflow-y: scroll;
     font-family: 'Source Sans Pro',sans-serif;
     scroll-behavior: smooth;
@@ -171,19 +171,27 @@ hr {
     padding-bottom: 3rem;
 }
   
-#vegeta {
+#spidy1 {
     height: 250px;
     float: left;
     margin-left: 5%;
     margin-right: 5%;
 }
 
-#goku {
+#spidy2 {
     height: 250px;
     width: 390.28px;
     float: right;
     margin-left: 5%;
     margin-right: 5%;
+}
+#spidy3{
+    float: left;
+    max-width: 200px;
+}
+#spidy4{
+    float: right;
+    max-width: 200px;
 }
   
 .card-title {
@@ -251,8 +259,9 @@ i {
 }
 
 .footer {
-    background: linear-gradient(to right, rgba(245, 245, 245, .8), rgba(245, 245, 245, .8)), url(asset/heart.gif);
+    background: linear-gradient(to right, rgba(245, 245, 245, .8), rgba(245, 245, 245, .8)), url(assets/spidyweb.webp);
     text-align: center;
+    background-size: cover;
     background-position: center;
     padding: 1rem 0;
 }
