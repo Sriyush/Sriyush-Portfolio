@@ -62,7 +62,7 @@ a:hover {
 
 .home {
     /* color: #ffff; */
-    display: flex;
+    /* display: flex; */
     background: linear-gradient(to right,rgba(205, 141, 141, 0.8),rgba(130, 142, 205, 0.8)),url(assets/spiderman.jpg);
     background-position: center;
     background-size: cover;
@@ -329,6 +329,11 @@ i {
 
 /* Media query for responsiveness (adjust as needed) */
 @media screen and (max-width: 1080px) {
+    body{
+        overflow-x:hidden;
+    overflow-y: scroll;
+    margin: 0;
+    }
     .navbar {
         flex-direction: column;
         align-items: center;
