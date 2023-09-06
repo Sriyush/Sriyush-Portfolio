@@ -140,7 +140,7 @@ h2 {
 
 hr {
     width: 20%;
-    border-style: dotted none none;
+    border-style: double none none;
     border-width: 7px;
     border-color: #555;
 }
@@ -243,14 +243,14 @@ hr {
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 100%;
-    scale: 1.1;
+    scale: 1.1; 
     font-size: 0.8rem;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 
 .social-icons a:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 i {
