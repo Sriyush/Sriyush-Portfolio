@@ -15,13 +15,29 @@
                 section.scrollIntoView({ behavior: 'smooth' });
             }
         }
+        function toggleMobileMenu() {
+    const mobileMenu = document.querySelector('.mobile-menu');
+    mobileMenu.classList.toggle('active'); // Toggle the 'active' class to show/hide the menu
+
+    // Close the menu when a menu item is clicked   
+    const menuItems = document.querySelectorAll('.mobile-menu-content .link');
+    menuItems.forEach((item) => {
+        item.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+        });
+    });
+}
     </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body class="body">
-    <header class="header">
+    <header class="header" id="pc-nav">
         <div class="navbar">
             <div class="navbar-left">
                 <div class="navbar-item"><a class="link" id="name" onclick="scrollToSection('home')">Ayush Srivastava</a></div>
+            </div>
+            <div class="mobile-menu-button" onclick="toggleMobileMenu()">
+                <i class="fas fa-bar    s" color="black"></i>
             </div>
             <div class="navbar-right">
                 <div class="navbar-item"><a class="link" onclick="scrollToSection('home')">home</a></div>
@@ -31,17 +47,48 @@
             </div>
         </div>
     </header>
-
-    <section class="home" id="home">
+    <div id="mob-nav">
+        <nav class="navbar bg-body-tertiary fixed-top" style="background: linear-gradient(to right,rgba(205, 141, 141, 0.8),rgba(130, 142, 205, 0.8)),url(assets/spidyweb.webp);">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Ayush Srivastava</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel"style="background: linear-gradient(to right,rgba(205, 141, 141, 0.8),rgba(130, 142, 205, 0.8)),url(assets/spidyweb.webp);">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Ayush Srivastava</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#scrollspyhome">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#about">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#project">Project</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#contact">contact</a>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </div>
+    <div class="container-flui" id="scrollspyhome">
         <div class="home-content">
             <div class="home-info">
-                <h3 class="text-primary">
+                <h3 class="text-primar">
                     It is my gift,my curse ,Who am i?
                 </h3>
                 <h1 class="heading-primary">I'm Ayush Srivastava</h1>
             </div>
         </div>
-    </section>
+    </div>
     
     <section class="about" id="about">
         <div class="main-container">
@@ -110,7 +157,7 @@
                 <div class="project-details">
                     <h3>🕷️📽️ Welcome to VideoFam: Your Superhub of Video Sharing! 🦸‍♂️</h3>
                     <p class="card-text">Your ultimate online video platform, where you effortlessly share your stories and explore others' tales, thanks to Flutter and Dart's smooth interface. Just like Spider-Man web-slinging through the city, uploading videos is a breeze. Discover captivating content, searching by title, and engage anonymously, adding an extra layer of privacy. Behind the scenes, Firebase powers VideoFam, storing videos securely in Firebase Storage, while Firestore Firebase meticulously organizes video details. Our dynamic comment system, fueled by Firebase Realtime Database, keeps conversations flowing. VideoFam, like Spider-Man's web, extends your abilities to connect with a global community of content creators. Embark on an exhilarating journey through the world of videos—download VideoFam now! 🦸‍♀️📺</p>
-                    <p class="card-text">📥 Download Foodie Here: <a href="https://drive.google.com/file/d/184d7onEemJNpNzui7r7xIeuKk-jQxDbH/view?usp=drive_link" style="color: black; text-decoration: none;">VideoFam App 📥</a></p>
+                    <p class="card-text">📥 Download VideoFam Here: <a href="https://drive.google.com/file/d/184d7onEemJNpNzui7r7xIeuKk-jQxDbH/view?usp=drive_link" style="color: black; text-decoration: none;">VideoFam App 📥</a></p>
                 </div>
             </div>
         </div>
@@ -151,6 +198,7 @@
             <p class="footer-text">Made with 🕸️ by Sriyush</p>
         </footer>
     </section>
-    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
 </html>
