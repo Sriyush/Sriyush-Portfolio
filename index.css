@@ -60,7 +60,7 @@ a:hover {
     color: grey;
 }
 
-.container-flui {
+.home {
     color: #ffff;
     display: flex;
     background: linear-gradient(to right,rgba(205, 141, 141, 0.8),rgba(130, 142, 205, 0.8)),url(assets/spiderman.jpg);
