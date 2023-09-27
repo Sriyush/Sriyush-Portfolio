@@ -7,47 +7,32 @@
     <link rel="shortcut icon" href="asset/kai.png" type="image/x-icon">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-    <script>
-        function scrollToSection(sectionId) {
-            const section = document.getElementById(sectionId);
-            if (section) {
-                section.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
-        function toggleMobileMenu() {
-    const mobileMenu = document.querySelector('.mobile-menu');
-    mobileMenu.classList.toggle('active'); // Toggle the 'active' class to show/hide the menu
-
-    // Close the menu when a menu item is clicked   
-    const menuItems = document.querySelectorAll('.mobile-menu-content .link');
-    menuItems.forEach((item) => {
-        item.addEventListener('click', () => {
-            mobileMenu.classList.remove('active');
-        });
-    });
-}
-    </script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
-<body class="body">
-    <header class="header" id="pc-nav">
-        <div class="navbar">
-            <div class="navbar-left">
-                <div class="navbar-item"><a class="link" id="name" onclick="scrollToSection('home')">Ayush Srivastava</a></div>
+<body>
+        <nav id="pc-nav"class="navbar fixed-top navbar-expand-lg bg-body-tertiary" style=" height: 70px; font-family: 'Source Sans Pro',sans-serif;background: linear-gradient(to right,rgba(205, 141, 141, 0.8),rgba(130, 142, 205, 0.8)),url(assets/spidyweb.webp);;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Ayush Srivastava</a>
+              <div class="collapse navbar-collapse justify-content-end me-5" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item me-5">
+                    <a class="nav-link active" aria-current="page" href="#scrollspyhome">Home</a>
+                  </li>
+                  <li class="nav-item me-5">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item me-5">
+                    <a class="nav-link" href="#project">Projects</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="#contact">Contacts</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="mobile-menu-button" onclick="toggleMobileMenu()">
-                <i class="fas fa-bar    s" color="black"></i>
-            </div>
-            <div class="navbar-right">
-                <div class="navbar-item"><a class="link" onclick="scrollToSection('scrollspyhome')">home</a></div>
-                <div class="navbar-item"><a class="link" onclick="scrollToSection('about')">about</a></div>
-                <div class="navbar-item"><a class="link" onclick="scrollToSection('project')">project</a></div>
-                <div class="navbar-item"><a class="link" onclick="scrollToSection('contact')">contact</a></div>
-            </div>
-        </div>
-    </header>
-    <div class="container-fluid" id="mob-nav">
+          </nav>
+    <!-- </div> -->
+    <div class="container-md" id="mob-nav">
         <nav class="navbar bg-body-tertiary fixed-top" style="background: linear-gradient(to right,rgba(205, 141, 141, 0.8),rgba(130, 142, 205, 0.8)),url(assets/spidyweb.webp);">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">Ayush Srivastava</a>
@@ -61,7 +46,7 @@
                 </div>
                 <div class="offcanvas-body">
                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
+                    <li class="nav-item">   
                       <a class="nav-link active" aria-current="page" href="#scrollspyhome">Home</a>
                     </li>
                     <li class="nav-item">
@@ -79,7 +64,7 @@
             </div>
           </nav>
     </div>
-    <!-- <section class="container-flui" id="scrollspyhome">
+    <section class="home" id="scrollspyhome">
         <div class="home-content">
             <div class="home-info">
                 <h3 class="text-primar">
@@ -88,11 +73,11 @@
                 <h1 class="heading-primary">I'm Ayush Srivastava</h1>
             </div>
         </div>
-    </section> -->
-    <div id="scrollspyhome" class="carousel slide">
+    </section>
+    <!-- <div id="scrollspyhome" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active home">
-            <img src="" class="d-block w-100 img-fluid home" alt="..." >
+            <img src="" class="d-block w-100" alt="..." >
             <div class="home-content">
                 <h3 class="text-primar">
                     It is my gift,my curse ,Who am i?
@@ -100,14 +85,14 @@
                 <h1 class="heading-primary">I'm Ayush Srivastava</h1>
             </div>
           </div>
-      </div>
+      </div> -->
     
     <section class="about" id="about">
         <div class="main-container">
             <h2 class="heading__">
                 <span class="heading-sec__main">
                     My Web-Slinging Journey.
-                    <hr>
+                    <!-- <hr> -->
                 </span>
                 <span class="heading-sec__sub">
                     Just like Spidey scales skyscrapers, I navigate the web of coding with finesse.
