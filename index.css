@@ -228,6 +228,7 @@ hr {
 }
 
 .contact {
+    width: 100%;
     height: 10vh;
     padding-top: 2rem;
 }
@@ -342,6 +343,18 @@ i {
 }
 /* Media query for responsiveness (adjust as needed) */
 @media screen and (max-width: 800px) {
+    #spidy1{
+        float: none
+    }
+    #spidy2{
+        float:none
+    }
+    #spidy3{
+        float:none
+    }
+    #spidy4{
+        float:none
+    }
     #mob-nav {
         display: block; /* Show mobile navigation on mobile screens */
     }
@@ -434,6 +447,9 @@ i {
     .project-image {
         order: 0; /* Swap the order of project details and project image */
         width: 100%; /* Adjust width to fill the container */
+    }
+    .about-me {
+        flex-basis: 100%;
     }
 }
 
