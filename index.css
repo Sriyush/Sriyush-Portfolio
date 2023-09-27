@@ -190,7 +190,7 @@ hr {
     margin-right: 5%;
 }
 #spidy3{
-    float: left;
+    /* float:inline-start; */
     max-width: 200px;
 }
 #spidy4{
